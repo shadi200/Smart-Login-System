@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/bootstrap.bundle.js"></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container py-5">
+        <div class="item w-75 m-auto p-5 text-center form-container">
+            <h1 class=" text-info mb-4"> Smart Login System </h1>
+            <div class="mb-3">
+                <input type="text" class="form-control bg-transparent text-white" id="usernameInput" placeholder="Enter your name">
+                <p id="usernameAlert" class="text-danger d-none">include at least 3 letters starting with capital, second name is optional</p>
+            </div>
+            <div class="mb-3">
+                <input type="email" class="form-control bg-transparent text-white" id="userEmailInput" placeholder="Enter your email">
+                <p id="userEmailAlert" class="text-danger d-none">name@example.com</p>
+            </div>
+            <div class="mb-3">
+                <input type="password" class="form-control bg-transparent text-white" id="userPasswordInput" placeholder="Enter your password">
+                <p id="userPasswordAlert" class="text-danger d-none">your must strenth your password from 5 to 15 characters.</p>
+            </div>
+            <p class=" text-success d-none" id="confirmMsg">Success</p>
+            <p class=" text-success d-none my-3" id="accountExistMsg">this account is exist ! Try another one.</p>
+            <p class=" text-success d-none my-3" id="tryAgainMsg">signUp failed ! Try again</p>
+            <a id="signupBtn" onclick="signUp()" class="btn btn-outline-info w-100 my-3 text-decoration-none">SignUp</a>
+            <p class=" text-white d-block">You have an account? <a href="index.html" class=" text-white">Sign In</a></p>
+            <a href="index.html" class=" d-none w-25 m-auto text-white btn btn-outline-success" id="signin">Sign In</a>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
